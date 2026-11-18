@@ -35,7 +35,7 @@ Me salió Python 3.12.3, que es la que trae Ubuntu 24.04. La práctica pide la 3
 
 Captura 1: versión de Python que trae Ubuntu (3.12.3).
 
-![Captura 1](img/captura1.png)
+![Captura 1](captura1.png)
 
 ## Paso 2. Instalar Python 3.13
 
@@ -53,7 +53,7 @@ La versión instalada es la 3.13.18. La 3.12 del sistema sigue instalada, porque
 
 Captura 2: Python 3.13.18 instalado.
 
-![Captura 2](img/captura2.png)
+![Captura 2](captura2.png)
 
 ## Paso 3. Crear la carpeta del proyecto y el entorno virtual
 
@@ -72,7 +72,7 @@ Al activar el entorno el prompt empieza por (venv). Dentro del entorno, python y
 
 Captura 3: entorno virtual activado con Python 3.13.
 
-![Captura 3](img/captura3.png)
+![Captura 3](captura3.png)
 
 ## Paso 4. Instalar las dependencias
 
@@ -99,7 +99,7 @@ Se instalaron fastapi 0.165.0, gunicorn 27.0.1 y uvicorn 0.54.0.
 
 Captura 4: paquetes instalados en el entorno virtual y versión de Gunicorn.
 
-![Captura 4](img/captura4.png)
+![Captura 4](captura4.png)
 
 ## Paso 5. Crear la aplicación
 
@@ -132,7 +132,7 @@ cat app/main.py
 
 Captura 5: contenido de app/main.py.
 
-![Captura 5](img/captura5.png)
+![Captura 5](captura5.png)
 
 ## Paso 6. Arrancar Gunicorn
 
@@ -146,7 +146,7 @@ En la salida se ve "Listening at: http://127.0.0.1:8000", "Using worker: uvicorn
 
 Captura 6: Gunicorn arrancado escuchando en 127.0.0.1:8000.
 
-![Captura 6](img/captura6.png)
+![Captura 6](captura6.png)
 
 ## Paso 7. Probar los endpoints con curl
 
@@ -168,7 +168,7 @@ Además la cabecera server es uvicorn, con lo que se ve que quien responde es mi
 
 Captura 7: respuestas de /health, /version y /ping con código 200 y JSON.
 
-![Captura 7](img/captura7.png)
+![Captura 7](captura7.png)
 
 ## Paso 8. Comprobar en qué dirección escucha
 
@@ -182,7 +182,7 @@ Sale LISTEN en 127.0.0.1:8000 con los procesos de gunicorn (el proceso principal
 
 Captura 8: Gunicorn escuchando solo en 127.0.0.1:8000.
 
-![Captura 8](img/captura8.png)
+![Captura 8](captura8.png)
 
 ## Paso 9. Parar Gunicorn
 
@@ -196,7 +196,7 @@ Ahora curl da el error "curl: (7) Couldn't connect to server", porque ya no hay 
 
 Captura 9: Gunicorn parado y curl sin poder conectar.
 
-![Captura 9](img/captura9.png)
+![Captura 9](captura9.png)
 
 ## Qué hace la orden de arranque
 
